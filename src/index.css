@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --font-display: "BEYNO", "sans-serif";
+  --font-display--font-feature-settings: "cv02", "cv03", "cv04", "cv11"; 
+  --font-display--font-variation-settings: "opsz" 32; 
+}
+
+
+@font-face {
+    font-family: 'BEYNO';
+    font-style: normal;
+    font-weight: normal;
+    src: local('BEYNO'), url('/public/fonts/BEYNO.woff') format('woff');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  @apply bg-blue-500 text-white p-4 rounded-lg shadow-lg;
+}
+
+.card h2 {
+  @apply text-xl font-semibold mb-2;
+}
+
+.card p {
+  @apply text-sm;
+}
+
+.card .image-container {
+  @apply mt-4 flex justify-center;
+}
+
+.card .image-container img {
+  @apply rounded;
+}
